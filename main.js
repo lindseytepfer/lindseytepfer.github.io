@@ -74,38 +74,3 @@ const handleStars = () => {
 }
 
 handleStars();
-
-//generate cloud clusters
-class Cloud {
-  constructor() {
-    this.x = Math.random() * canvas.width;
-    this.y = Math.random() * canvas.height;
-    this.size = 10;
-    this.blur = 40;
-    this.fade = 10;
-  }
-  
-  draw(){
-    ctx.beginPath();
-    for (let i=0; i<10; i++){
-      ctx.arc(this.x+i*25,this.y,this.size * Math.random(),0,Math.PI*2)
-      ctx.closePath();
-      ctx.filter = 'blur('+this.blur+'px)opacity(95%)';
-      ctx.fill();
-    }
-   }
- }
-
-const init = () => {
-  for (let i=0; i<8; i++){
-    cloudArray.push(new Cloud());
-  }
-}
-init();
-const handleCloud = () => {
-  for (let i=0; i < cloudArray.length; i++){
-    cloudArray[i].draw();
-  }
-}
-
-handleCloud();
