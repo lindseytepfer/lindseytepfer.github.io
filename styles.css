@@ -29,6 +29,10 @@
     min-width: 95%;
     margin-top: -10%;
   }
+
+  .iframe-divs {
+    max-width: 90%;
+  }
 }
 
 /* navigation link styling */
@@ -174,6 +178,12 @@ td {
 
 .artwork-div p {
   text-align: center;
+}
+
+.iframe-divs {
+  margin-top: 2%;
+  margin-bottom: 2%;
+
 }
 
 .signature-div {
