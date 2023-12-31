@@ -1,7 +1,7 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight /5;
+canvas.height = window.innerHeight +200;
 ctx.fillStyle = 'white';
 const cloudArray = [];
 const starArray = [];
